@@ -1,0 +1,1339 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: calibri;
+}
+
+.loader {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.loader p {
+  font-size: 22px;
+}
+
+.loader .width-loader {
+  border: 2px solid steelblue;
+  width: 70%;
+  border-radius: 3px;
+  height: 40px;
+}
+
+.loader .width-loader .loader-real {
+  width: 100%;
+  height: 100%;
+  background-color: steelblue;
+  border-radius: 3px;
+  -webkit-animation: 9s infinite load;
+          animation: 9s infinite load;
+}
+
+@-webkit-keyframes load {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes load {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+header nav ul button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: steelblue;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 8px 25px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  z-index: 999;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5em;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header nav ul li {
+  list-style-type: none;
+}
+
+.header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.header nav ul button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: steelblue;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 8px 25px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.container {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .form-container {
+  height: 40em;
+  width: 90%;
+  padding: 2em 0;
+}
+
+.container .form-container .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.container .form-container .form form {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4em 0;
+  gap: 2em;
+  background-color: rgba(128, 128, 128, 0.155);
+}
+
+.container .form-container .form form input {
+  width: 85%;
+  height: 100px;
+  font-size: 19px;
+  padding-left: .2em;
+  outline: none;
+  border: 1px solid gray;
+}
+
+.container .form-container .form form textarea {
+  padding-left: .2em;
+  outline: none;
+  border: 1px solid gray;
+  font-size: 19px;
+}
+
+.container .form-container .form form button {
+  background: steelblue;
+  color: white;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  padding: 8px 12em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.container .form-container .form img {
+  width: 50%;
+  height: 100%;
+}
+
+.footer {
+  width: 100%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.footer footer {
+  text-align: center;
+  color: white;
+  background-color: black;
+  color: white;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 3em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid white;
+}
+
+.footer footer p {
+  font-size: 20px;
+}
+
+.footer .footer-one {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  border-bottom: 1px solid white;
+}
+
+.footer .footer-one button {
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  background-color: steelblue;
+  padding: 10px 4em;
+  cursor: pointer;
+  font-size: 19px;
+  color: white;
+  font-weight: 600;
+}
+
+.footer .footer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 500px;
+}
+
+.footer .footer2 .flex-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1em;
+}
+
+.footer .footer2 .flex-footer .Subscribe input {
+  height: 40px;
+  font-size: 19px;
+  padding-left: 8px;
+  border: none;
+  outline: none;
+}
+
+.footer .footer2 .flex-footer .Subscribe input::-webkit-input-placeholder {
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.848);
+}
+
+.footer .footer2 .flex-footer .Subscribe input:-ms-input-placeholder {
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.848);
+}
+
+.footer .footer2 .flex-footer .Subscribe input::-ms-input-placeholder {
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.848);
+}
+
+.footer .footer2 .flex-footer .Subscribe input::placeholder {
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.848);
+}
+
+.footer .footer2 .flex-footer .Subscribe button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: none;
+  outline: none;
+  padding: 12px 3em;
+  background-color: steelblue;
+  color: white;
+  border-radius: 6px;
+  font-size: 22px;
+}
+
+.footer .footer2 .flex-footer .one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+}
+
+.footer .footer2 .flex-footer .one h3 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: steelblue;
+          text-decoration-color: steelblue;
+  font-size: 30px;
+}
+
+.footer .footer2 .flex-footer .one p {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 854px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 999;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5em;
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  header nav ul li {
+    list-style-type: none;
+  }
+  header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  header nav ul button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: steelblue;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 8px 25px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  .header {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 542px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 999;
+  }
+  .header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header nav .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: none;
+    height: 100%;
+  }
+  .header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .header nav ul li {
+    list-style-type: none;
+  }
+  .header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .header nav ul button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: steelblue;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 8px 25px;
+    border-radius: 3px;
+    display: none;
+    cursor: pointer;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 999;
+  }
+  .header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header nav .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    display: none;
+    gap: 8px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .header nav ul li {
+    list-style-type: none;
+  }
+  .header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .header nav ul li .abt {
+    display: none;
+  }
+  .header nav ul button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: steelblue;
+    color: white;
+    border: none;
+    display: none;
+    outline: none;
+    padding: 8px 25px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1692px) {
+  .container {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 2em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .form-container {
+    height: 40em;
+    width: 90%;
+    padding: 2em 0;
+  }
+  .container .form-container .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+  }
+  .container .form-container .form form {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 4em 0;
+    gap: 2em;
+    background-color: rgba(128, 128, 128, 0.155);
+  }
+  .container .form-container .form form input {
+    width: 85%;
+    height: 100px;
+    font-size: 19px;
+    padding-left: .2em;
+    outline: none;
+    border: 1px solid gray;
+  }
+  .container .form-container .form form textarea {
+    padding-left: .2em;
+    outline: none;
+    border: 1px solid gray;
+    font-size: 19px;
+    width: 85%;
+  }
+  .container .form-container .form form button {
+    background: steelblue;
+    color: white;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    padding: 8px 12em;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .container .form-container .form img {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1428px) {
+  .container {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 2em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .form-container {
+    height: 40em;
+    width: 90%;
+    padding: 2em 0;
+  }
+  .container .form-container .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .form-container .form form {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 4em 0;
+    gap: 2em;
+    background-color: rgba(128, 128, 128, 0.155);
+  }
+  .container .form-container .form form input {
+    width: 85%;
+    height: 100px;
+    font-size: 19px;
+    padding-left: .2em;
+    outline: none;
+    border: 1px solid gray;
+  }
+  .container .form-container .form form textarea {
+    padding-left: .2em;
+    outline: none;
+    border: 1px solid gray;
+    font-size: 19px;
+    width: 85%;
+  }
+  .container .form-container .form form button {
+    background: steelblue;
+    color: white;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    padding: 8px 6em;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .container .form-container .form img {
+    width: 50%;
+    height: 100%;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 821px) {
+  .container {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 2em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .form-container {
+    height: 40em;
+    width: 90%;
+    padding: 2em 0;
+  }
+  .container .form-container .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .form-container .form form {
+    width: 90%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 4em 0;
+    gap: 2em;
+    background-color: rgba(128, 128, 128, 0.155);
+  }
+  .container .form-container .form form input {
+    width: 85%;
+    height: 100px;
+    font-size: 19px;
+    padding-left: .2em;
+    outline: none;
+    border: 1px solid gray;
+  }
+  .container .form-container .form form textarea {
+    padding-left: .2em;
+    outline: none;
+    border: 1px solid gray;
+    font-size: 19px;
+    width: 85%;
+  }
+  .container .form-container .form form button {
+    background: steelblue;
+    color: white;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    padding: 8px 6em;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .container .form-container .form img {
+    width: 50%;
+    height: 100%;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .container {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 2em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .form-container {
+    height: 40em;
+    width: 90%;
+    padding: 2em 0;
+  }
+  .container .form-container .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .form-container .form form {
+    width: 90%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 4em 0;
+    gap: 2em;
+    background-color: rgba(128, 128, 128, 0.155);
+  }
+  .container .form-container .form form input {
+    width: 85%;
+    height: 100px;
+    font-size: 19px;
+    padding-left: .2em;
+    outline: none;
+    border: 1px solid gray;
+  }
+  .container .form-container .form form textarea {
+    padding-left: .2em;
+    outline: none;
+    border: 1px solid gray;
+    font-size: 19px;
+    width: 85%;
+  }
+  .container .form-container .form form button {
+    background: steelblue;
+    color: white;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    padding: 8px 2em;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .container .form-container .form img {
+    width: 50%;
+    height: 100%;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 682px) {
+  .footer {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .footer footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    color: white;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 3em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 1px solid white;
+  }
+  .footer footer p {
+    font-size: 20px;
+  }
+  .footer .footer-one {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 150px;
+    border-bottom: 1px solid white;
+  }
+  .footer .footer-one button {
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    background-color: steelblue;
+    padding: 10px 4em;
+    cursor: pointer;
+    font-size: 19px;
+    color: white;
+    font-weight: 600;
+  }
+  .footer .footer2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: black;
+    color: white;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2em 0;
+  }
+  .footer .footer2 .flex-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: black;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 2em;
+    margin-top: 1em;
+  }
+  .footer .footer2 .flex-footer .Subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footer2 .flex-footer .Subscribe input {
+    height: 40px;
+    font-size: 19px;
+    padding-left: 8px;
+    border: none;
+    outline: none;
+    width: 95%;
+  }
+  .footer .footer2 .flex-footer .Subscribe input::-webkit-input-placeholder {
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.848);
+  }
+  .footer .footer2 .flex-footer .Subscribe input:-ms-input-placeholder {
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.848);
+  }
+  .footer .footer2 .flex-footer .Subscribe input::-ms-input-placeholder {
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.848);
+  }
+  .footer .footer2 .flex-footer .Subscribe input::placeholder {
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.848);
+  }
+  .footer .footer2 .flex-footer .Subscribe button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: none;
+    outline: none;
+    padding: 12px 3em;
+    background-color: steelblue;
+    color: white;
+    border-radius: 6px;
+    font-size: 22px;
+  }
+  .footer .footer2 .flex-footer .one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2em;
+  }
+  .footer .footer2 .flex-footer .one h3 {
+    text-decoration: underline;
+    -webkit-text-decoration-color: steelblue;
+            text-decoration-color: steelblue;
+    font-size: 30px;
+  }
+  .footer .footer2 .flex-footer .one p {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
